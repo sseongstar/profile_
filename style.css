@@ -1,0 +1,187 @@
+/* 기본 스타일 설정 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* 배경 색과 텍스트 스타일 */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #282c34;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.navigation a:hover {
+    color: #61dafb;
+}
+
+/* 섹션 스타일 */
+section {
+    padding: 50px 0;
+}
+
+/* ABOUT 섹션 */
+.about-section {
+    background-color: #61dafb;
+    padding: 50px;
+    text-align: center;
+}
+
+.ABOUT h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.ABOUT h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.ABOUT-content pre {
+    font-size: 18px;
+    color: #fff;
+    white-space: pre-line;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* 소셜 아이콘 */
+.ABOUT-sci a {
+    margin: 0 10px;
+    font-size: 30px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.ABOUT-sci a:hover {
+    color: #282c34;
+}
+
+/* 프로필 이미지 스타일 */
+.ABOUT-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.glowing-circle {
+    position: relative;
+    display: inline-block;
+}
+
+.glowing-circle span {
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    animation: glowing 2s infinite;
+    opacity: 0.6;
+}
+
+.glowing-circle span:nth-child(1) {
+    width: 150px;
+    height: 150px;
+    background: #ff6f61;
+    animation-delay: 0s;
+}
+
+.glowing-circle span:nth-child(2) {
+    width: 200px;
+    height: 200px;
+    background: #61dafb;
+    animation-delay: 1s;
+}
+
+.glowing-circle img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+@keyframes glowing {
+    0% {
+        transform: scale(0.8);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.8);
+    }
+}
+
+/* CAREER 섹션 */
+.career-section {
+    background-color: #fff;
+}
+
+.CAREER .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.CAREER .box {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.CAREER .box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.CAREER .box i {
+    font-size: 50px;
+    color: #61dafb;
+    margin-bottom: 10px;
+}
+
+.CAREER .box h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.CAREER .box p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* 부드러운 스크롤 */
+html {
+    scroll-behavior: smooth;
+}
