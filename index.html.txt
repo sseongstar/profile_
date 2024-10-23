@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>www.sseongstar.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298); /* 그라디언트 배경 */
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* 배경에 움직이는 애니메이션 추가 */
+        .moving-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.2), transparent);
+            animation: move 10s infinite alternate;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(-50px, -50px);
+            }
+        }
+
+        /* ABOUT 섹션 */
+        .ABOUT {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* 중앙 정렬을 위한 flex 설정 */
+            height: 100vh;
+            text-align: center;
+            color: white;
+        }
+
+        .ABOUT-content {
+            margin-top: 20px;
+        }
+
+        .glowing-circle {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .glowing-circle span {
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: rotate 6s linear infinite;
+        }
+
+        .glowing-circle span:nth-child(2) {
+            width: 300px;
+            height: 300px;
+        }
+
+        .image img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            z-index: 1;
+            position: relative;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        header {
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .ABOUT-sci a {
+            margin: 0 10px;
+            color: white;
+        }
+
+        /* 추가적인 스타일과 효과 */
+        .glowing-circle img {
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="moving-bg"></div> <!-- 움직이는 배경 -->
+
+    <header>
+        <h2 class="logo">SEONG YOON JAE</h2>
+        <nav class="navigation">
+            <a href="#">HAPPY</a>
+            <a href="#about">HOME</a>
+            <a href="#career">CAREER</a>
+        </nav>
+    </header>
+
+    <!-- ABOUT 섹션 -->
+    <section class="about-section" id="about">
+        <div class="ABOUT">
+            <div class="ABOUT-img">
+                <div class="glowing-circle"> 
+                    <span></span>
+                    <span></span>                         
+                    <div class="image">
+                        <img src="myphoto.png" alt="Seong Yoonjae의 사진">
+                    </div>
+                </div>
+            </div>
+            <div class="ABOUT-content">
+                <h1>👋 WELCOME 👋</h1>
+                <h3>JBNU SMARTFARM</h3>
+                <pre>이름: 성윤재 (成潤財)
+2005년 6월 4일 수원특례시 출생 
+2012~2018 전주서천초등학교
+2018~2021 전주서중학교
+2021~2024 전주한일고등학교
+2024~ 전북대학교 스마트팜학과</pre>
+            </div>
+            <div class="ABOUT-sci">
+                <a href="https://www.instagram.com/sseongstar_"><i class='bx bxl-instagram'></i></a>
+                <a href="https://github.com/sseongstar"><i class='bx bxl-github'></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CAREER 섹션 -->
+    <section class="career-section" id="career">
+        <div class="CAREER">
+            <div class="box-container">
+                <div class="box">
+                    <i class='bx bxs-graduation'></i>
+                    <span>2024</span>
+                    <h3>전주한일고등학교 졸업</h3>
+                
+                </div>
+                <div class="box">
+                    <i class='bx bxs-graduation'></i>
+                    <span>2024</span>
+                    <h3>전북대학교<br>스마트팜학과 입학</h3>
+                    
+                </div>
+                <div class="box">
+                    <i class='bx bxs-graduation'></i>
+                    <span>2025~2026</span>
+                    <h3>군백기</h3>
+                   
+                </div>
+                <div class="box">
+                    <i class='bx bx-medal'></i>
+                    <span>2027</span>
+                    <h3>감정평가사 자격증 취득</h3>
+                    
+                </div>
+                <div class="box">
+                    <i class='bx bx-medal'></i>
+                    <span>2027</span>
+                    <h3>ONE-YEAH 영농창업특성화 사업단 작목반장</h3>
+                    
+                </div>
+                <div class="box">
+                    <i class='bx bx-medal'></i>
+                    <span>2029</span>
+                    <h3>전북대학교 졸업 예정</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
